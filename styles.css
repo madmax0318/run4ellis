@@ -147,6 +147,19 @@ h2 {
   margin-top: 1rem;
 }
 
+.track-map {
+  margin-top: 1.5rem;
+}
+
+.subhead {
+  margin-top: 0.85rem;
+}
+
+.cards.support {
+  margin-top: 1rem;
+  padding-top: 0;
+}
+
 .wx__temp {
   margin: 0;
   font-size: clamp(2.4rem, 10vw, 3.2rem);
@@ -379,8 +392,16 @@ footer a { color: var(--accent); }
   .hero { padding: 3.5rem 0 1.5rem; }
 
   .cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     padding-bottom: 0.5rem;
+  }
+
+  .cards.support {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .track-map .map-links {
+    grid-template-columns: 1fr 1fr;
   }
 
   .status__line { display: block; }
@@ -392,7 +413,7 @@ footer a { color: var(--accent); }
 
   .aid-legend { grid-template-columns: 1fr 1fr; }
 
-  .map-links { grid-template-columns: 1fr 1fr 1fr; }
+  .map-links { grid-template-columns: 1fr 1fr; }
 
   #course-map { height: 420px; }
 
