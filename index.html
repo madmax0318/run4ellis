@@ -32,18 +32,6 @@
 
   <main id="main">
     <section class="cards" aria-label="Ways to help">
-      <article class="card">
-        <h2>Donate</h2>
-        <p>Bryce’s GoFundMe benefits <strong>St. Jude Children’s Research Hospital</strong> in Ellis’s honor.</p>
-        <a class="btn primary" href="https://gofund.me/4b17893d2" target="_blank" rel="noopener">Give on GoFundMe</a>
-      </article>
-
-      <article class="card">
-        <h2>Get the shirt</h2>
-        <p>Wear the <strong>Running for Ellis</strong> tee from All Saints Supply. Soft staple tee, printed to order.</p>
-        <a class="btn" href="https://allsaintssupply.com/products/running-for-ellis" target="_blank" rel="noopener">Shop the shirt</a>
-      </article>
-
       <article class="card highlight">
         <h2>Track the run</h2>
         <p>
@@ -55,6 +43,27 @@
         <a class="btn primary" href="https://live.aravaiparunning.com/#/run_rabbit_run-2026/628690" target="_blank" rel="noopener">Bryce’s live tracker</a>
         <a class="btn" href="https://runrabbitrunsteamboat.com/" target="_blank" rel="noopener">Race info site</a>
       </article>
+
+      <article class="card">
+        <h2>Donate</h2>
+        <p>Bryce’s GoFundMe benefits <strong>St. Jude Children’s Research Hospital</strong> in Ellis’s honor.</p>
+        <a class="btn primary" href="https://gofund.me/4b17893d2" target="_blank" rel="noopener">Give on GoFundMe</a>
+      </article>
+
+      <article class="card">
+        <h2>Get the shirt</h2>
+        <p>Wear the <strong>Running for Ellis</strong> tee from All Saints Supply. Soft staple tee, printed to order.</p>
+        <a class="btn" href="https://allsaintssupply.com/products/running-for-ellis" target="_blank" rel="noopener">Shop the shirt</a>
+      </article>
+    </section>
+
+    <section class="card weather" id="weather" aria-labelledby="wx-title">
+      <p class="kicker">Race area</p>
+      <h2 id="wx-title">Steamboat / Mount Werner</h2>
+      <p class="wx__temp" id="wx-temp">…</p>
+      <p class="wx__cond" id="wx-cond">Loading weather…</p>
+      <p class="wx__meta" id="wx-meta"></p>
+      <p class="note" id="wx-stamp"></p>
     </section>
 
     <section class="card status" id="location" aria-labelledby="status-title">
@@ -103,9 +112,9 @@
   </footer>
 
   <nav class="sticky-cta" aria-label="Quick actions">
+    <a href="https://live.aravaiparunning.com/#/run_rabbit_run-2026/628690">Track</a>
     <a href="https://gofund.me/4b17893d2">Donate</a>
     <a href="https://allsaintssupply.com/products/running-for-ellis">Shirt</a>
-    <a href="https://live.aravaiparunning.com/#/run_rabbit_run-2026/628690">Track</a>
   </nav>
 
   <script
@@ -115,5 +124,6 @@
   ></script>
   <script src="location.js"></script>
   <script src="map.js"></script>
+  <script src="weather.js"></script>
 </body>
 </html>
