@@ -40,6 +40,15 @@
     return String(value);
   }
 
+  function parseMile(value) {
+    if (typeof value === "number" && Number.isFinite(value)) return value;
+    if (typeof value === "string" && value.trim()) {
+      var parsed = Number(value);
+      if (Number.isFinite(parsed)) return parsed;
+    }
+    return null;
+  }
+
   function readLocation() {
     var loc = window.RUN4ELLIS_LOCATION || window.RUN4ELLIS_LOCATION || null;
     if (!loc) return null;
@@ -50,6 +59,7 @@
       lat: typeof loc.lat === "number" ? loc.lat : null,
       lng: typeof loc.lng === "number" ? loc.lng : null,
       status: loc.status || "",
+      mile: parseMile(loc.mile),
     };
   }
 
@@ -83,8 +93,48 @@
     if (note) note.textContent = loc.note || "";
     if (stamp) {
       stamp.textContent = hasCoords(loc)
-        ? "Gold pin on the map marks this update."
-        : "No coordinates in this update — map pin hidden.";
+        ? "Gold marks this update on the map and elevation profile."
+        : loc && loc.mile != null
+          ? "Gold mark on the elevation profile shows this update."
+          : "No coordinates in this update — map pin hidden.";
+    }
+  }
+
+  /**
+   * elevation-100.jpg plot box, measured from the file (1543×410):
+   * y-axis / mile 0 at x=47, mile 100 tick at x=1495. X-axis is 0–100 mi.
+   */
+  var ELEVATION_CHART = {
+    imageWidth: 1543,
+    plotLeft: 47,
+    plotRight: 1495,
+    mileMax: 100,
+  };
+
+  function renderElevation(loc) {
+    var marker = $("elevation-marker");
+    var label = $("elevation-marker-label");
+    if (!marker) return;
+
+    var mile = loc && loc.mile != null ? loc.mile : null;
+    if (mile == null) {
+      marker.hidden = true;
+      return;
+    }
+
+    var chart = ELEVATION_CHART;
+    var clamped = Math.max(0, Math.min(chart.mileMax, mile));
+    var x =
+      chart.plotLeft +
+      (clamped / chart.mileMax) * (chart.plotRight - chart.plotLeft);
+    marker.style.left = (x / chart.imageWidth) * 100 + "%";
+    marker.hidden = false;
+    marker.classList.toggle("elevation__marker--late", clamped >= 50);
+
+    if (label) {
+      var place = loc.aidStation || "Last check-in";
+      var shown = Math.round(mile * 10) / 10;
+      label.textContent = place + " · mi " + shown;
     }
   }
 
@@ -186,6 +236,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     var loc = readLocation();
     renderStatus(loc);
+    renderElevation(loc);
     try {
       initMap(loc);
     } catch (err) {
