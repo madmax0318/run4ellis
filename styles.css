@@ -106,6 +106,10 @@ h2 {
 
 .card p { margin: 0; color: var(--muted); }
 
+.cards .card > p:first-of-type { flex: 1; }
+
+.cards .card > .btn { margin-top: auto; }
+
 .card p strong { color: var(--ink); }
 
 .btn {
