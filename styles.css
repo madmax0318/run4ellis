@@ -141,9 +141,31 @@ h2 {
   opacity: 0.95;
 }
 
+.weather,
 .status,
 .map-panel {
   margin-top: 1rem;
+}
+
+.wx__temp {
+  margin: 0;
+  font-size: clamp(2.4rem, 10vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.wx__cond {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.wx__meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .status__line {
@@ -181,6 +203,30 @@ h2 {
   width: 100%;
   height: 320px;
   touch-action: manipulation;
+}
+
+.course-official {
+  display: grid;
+  gap: 1rem;
+}
+
+.course-official figure {
+  margin: 0;
+}
+
+.course-official img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #11160f;
+}
+
+.course-official figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--muted);
 }
 
 .map-links {
@@ -346,7 +392,7 @@ footer a { color: var(--accent); }
 
   .aid-legend { grid-template-columns: 1fr 1fr; }
 
-  .map-links { grid-template-columns: 1fr 1fr; }
+  .map-links { grid-template-columns: 1fr 1fr 1fr; }
 
   #course-map { height: 420px; }
 
