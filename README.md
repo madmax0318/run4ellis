@@ -8,9 +8,9 @@ Open `index.html` in a browser. No install, no build.
 
 ## Links
 
+- Track: https://live.aravaiparunning.com/#/run_rabbit_run-2026/628690
 - Donate: https://gofund.me/4b17893d2
 - Shirt: https://allsaintssupply.com/products/running-for-ellis
-- Track: https://runrabbitrunsteamboat.com/
 - Official course: https://runrabbitrunsteamboat.com/the-course/
 - CalTopo: https://caltopo.com/m/F810
 

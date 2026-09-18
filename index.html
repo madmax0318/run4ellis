@@ -32,18 +32,6 @@
 
   <main id="main">
     <section class="cards" aria-label="Ways to help">
-      <article class="card">
-        <h2>Donate</h2>
-        <p>Bryce’s GoFundMe benefits <strong>St. Jude Children’s Research Hospital</strong> in Ellis’s honor.</p>
-        <a class="btn primary" href="https://gofund.me/4b17893d2" target="_blank" rel="noopener">Give on GoFundMe</a>
-      </article>
-
-      <article class="card">
-        <h2>Get the shirt</h2>
-        <p>Wear the <strong>Running for Ellis</strong> tee from All Saints Supply. Soft staple tee, printed to order.</p>
-        <a class="btn" href="https://allsaintssupply.com/products/running-for-ellis" target="_blank" rel="noopener">Shop the shirt</a>
-      </article>
-
       <article class="card highlight">
         <h2>Track the run</h2>
         <p>
@@ -54,6 +42,18 @@
         <p class="note">50 &amp; 100 mile races · Steamboat Springs · Fri–Sat Sep 18–19</p>
         <a class="btn primary" href="https://live.aravaiparunning.com/#/run_rabbit_run-2026/628690" target="_blank" rel="noopener">Bryce’s live tracker</a>
         <a class="btn" href="https://runrabbitrunsteamboat.com/" target="_blank" rel="noopener">Race info site</a>
+      </article>
+
+      <article class="card">
+        <h2>Donate</h2>
+        <p>Bryce’s GoFundMe benefits <strong>St. Jude Children’s Research Hospital</strong> in Ellis’s honor.</p>
+        <a class="btn primary" href="https://gofund.me/4b17893d2" target="_blank" rel="noopener">Give on GoFundMe</a>
+      </article>
+
+      <article class="card">
+        <h2>Get the shirt</h2>
+        <p>Wear the <strong>Running for Ellis</strong> tee from All Saints Supply. Soft staple tee, printed to order.</p>
+        <a class="btn" href="https://allsaintssupply.com/products/running-for-ellis" target="_blank" rel="noopener">Shop the shirt</a>
       </article>
     </section>
 
@@ -73,19 +73,43 @@
     <section class="card map-panel" id="map" aria-labelledby="map-title">
       <h2 id="map-title">Course map</h2>
       <p>
-        Overview of Run Rabbit Run around Steamboat Springs and Mount Werner.
-        Pins are approximate aid stations — not official GPS.
+        Official 100-mile course and elevation from the 2026 runner’s manual,
+        with aid stations labeled.
       </p>
-      <div class="map-frame">
-        <div id="course-map" role="application" aria-label="Run Rabbit Run course overview map"></div>
-      </div>
-      <p class="note">Pinch to zoom. Tap a pin for the aid-station name. Gold = last known location.</p>
-      <ul class="aid-legend" id="aid-legend"></ul>
+      <figure class="official-maps">
+        <img
+          class="official-maps__course"
+          src="assets/course-map-100.jpg"
+          alt="Official CalTopo 100-mile Run Rabbit Run course map with aid stations"
+          width="1600"
+          height="1207"
+          loading="lazy"
+        />
+        <img
+          class="official-maps__elevation"
+          src="assets/elevation-100.jpg"
+          alt="Official 100-mile elevation profile with aid-station labels"
+          width="1543"
+          height="410"
+          loading="lazy"
+        />
+        <figcaption>From the 2026 Run Rabbit Run Runner’s Manual (CalTopo)</figcaption>
+      </figure>
       <div class="map-links">
         <a class="btn" href="https://live.aravaiparunning.com/#/run_rabbit_run-2026/628690" target="_blank" rel="noopener">Bryce’s live tracker</a>
         <a class="btn" href="https://runrabbitrunsteamboat.com/the-course/" target="_blank" rel="noopener">Official course page</a>
         <a class="btn" href="https://caltopo.com/m/F810" target="_blank" rel="noopener">Interactive CalTopo map</a>
       </div>
+      <h3 class="map-overview-title">Interactive overview</h3>
+      <p>
+        Overview of Run Rabbit Run around Steamboat Springs and Mount Werner.
+        Pins are approximate aid stations — not official GPS. Gold = last known location.
+      </p>
+      <div class="map-frame">
+        <div id="course-map" role="application" aria-label="Run Rabbit Run course overview map"></div>
+      </div>
+      <p class="note">Pinch to zoom. Tap a pin for the aid-station name.</p>
+      <ul class="aid-legend" id="aid-legend"></ul>
     </section>
 
     <section class="story">
@@ -103,9 +127,9 @@
   </footer>
 
   <nav class="sticky-cta" aria-label="Quick actions">
+    <a href="https://live.aravaiparunning.com/#/run_rabbit_run-2026/628690">Track</a>
     <a href="https://gofund.me/4b17893d2">Donate</a>
     <a href="https://allsaintssupply.com/products/running-for-ellis">Shirt</a>
-    <a href="https://live.aravaiparunning.com/#/run_rabbit_run-2026/628690">Track</a>
   </nav>
 
   <script
