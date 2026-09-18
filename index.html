@@ -1,139 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Run for Ellis — Bryce Montano · Run Rabbit Run 2026</title>
-    <meta
-      name="description"
-      content="Bryce Montano is running Run Rabbit Run in Steamboat Springs for Ellis and St. Jude. Donate, get the shirt, and follow aid-station updates."
-    />
-    <meta name="theme-color" content="#141711" />
-    <meta property="og:title" content="Run for Ellis" />
-    <meta
-      property="og:description"
-      content="A 100-mile run for Ellis and St. Jude. Donate, get the shirt, track the race."
-    />
-    <meta property="og:type" content="website" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,560;9..144,680&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip" href="#main">Skip to content</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Run for Ellis</title>
+  <meta name="description" content="Bryce Montano is running Run Rabbit Run 100 for Ellis McDaniel. Donate to St. Jude, grab a shirt, and follow race-day updates." />
+  <meta name="theme-color" content="#0f1410" />
+  <meta property="og:title" content="Run for Ellis" />
+  <meta property="og:description" content="Donate to St. Jude, get the shirt, track Bryce at Run Rabbit Run." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <header class="top">
-      <a class="wordmark" href="#main">Run for Ellis</a>
-      <nav class="top__nav" aria-label="Primary">
-        <a class="btn btn--gold" href="https://gofund.me/4b17893d2">Donate</a>
-        <a class="btn btn--ghost" href="https://allsaintssupply.com/products/running-for-ellis">Get the shirt</a>
-        <a class="btn btn--ghost" href="https://runrabbitrunsteamboat.com/">Track the run</a>
-      </nav>
-    </header>
+  <header class="hero">
+    <p class="eyebrow">September 18–19, 2026 · Steamboat Springs, CO</p>
+    <h1>Run for Ellis</h1>
+    <p class="lede">
+      Bryce Montano is taking on the <strong>Run Rabbit Run 100</strong> for Ellis McDaniel —
+      and every mile points back to St. Jude and the fight against pediatric cancer.
+    </p>
+  </header>
 
-    <main id="main">
-      <section class="hero">
-        <p class="eyebrow">Steamboat Springs, Colorado · September 18–19, 2026</p>
-        <h1>Run for Ellis</h1>
-        <p class="lede">
-          Bryce Montano is running his seventh 100-miler — Run Rabbit Run — for Ellis
-          and for the kids at St. Jude.
-        </p>
-        <div class="cta-row" aria-label="Ways to help">
-          <a class="btn btn--gold btn--block" href="https://gofund.me/4b17893d2">Donate</a>
-          <a class="btn btn--ghost btn--block" href="https://allsaintssupply.com/products/running-for-ellis">Get the shirt</a>
-          <a class="btn btn--ghost btn--block" href="https://runrabbitrunsteamboat.com/">Track the run</a>
-        </div>
-      </section>
+  <main id="main">
+    <section class="cards" aria-label="Ways to help">
+      <article class="card">
+        <h2>Donate</h2>
+        <p>Bryce’s GoFundMe benefits <strong>St. Jude Children’s Research Hospital</strong> in Ellis’s honor.</p>
+        <a class="btn primary" href="https://gofund.me/4b17893d2" target="_blank" rel="noopener">Give on GoFundMe</a>
+      </article>
 
-      <section class="panel why" aria-labelledby="why-title">
-        <h2 id="why-title">Why this run</h2>
+      <article class="card">
+        <h2>Get the shirt</h2>
+        <p>Wear the <strong>Running for Ellis</strong> tee from All Saints Supply. Soft staple tee, printed to order.</p>
+        <a class="btn" href="https://allsaintssupply.com/products/running-for-ellis" target="_blank" rel="noopener">Shop the shirt</a>
+      </article>
+
+      <article class="card highlight">
+        <h2>Track the run</h2>
         <p>
-          Ellis is Dave McDaniel’s son. He is fighting osteosarcoma — a hard road of
-          chemo and surgery. Bryce, a friend and former colleague, is lining up at
-          Run Rabbit Run so the miles can stand for Ellis and for St. Jude.
+          Race-day tracking will be available on the official Run Rabbit Run site on Friday.
+          Bryce will <strong>not</strong> have a Garmin inReach this time — expect
+          <strong>aid-station updates only</strong> (they will be delayed), plus a few texts when he can.
         </p>
-        <p>
-          If you want to help, the most direct ways are
-          <a href="https://gofund.me/4b17893d2">Bryce’s GoFundMe for St. Jude</a>
-          (“Running for Ellis”) and the
-          <a href="https://allsaintssupply.com/products/running-for-ellis">Running for Ellis tee</a>.
-        </p>
-      </section>
+        <a class="btn primary" href="https://runrabbitrunsteamboat.com/" target="_blank" rel="noopener">Open race tracking</a>
+        <p class="note">50 &amp; 100 mile races · Steamboat Springs · Fri–Sat Sep 18–19</p>
+      </article>
+    </section>
 
-      <section class="panel status" id="location" aria-labelledby="status-title">
-        <p class="kicker">Live status</p>
-        <h2 id="status-title">Last known location</h2>
-        <p class="status__line">
-          <span>Last update: <strong id="status-updated">Loading…</strong></span>
-          <span class="dot" aria-hidden="true">·</span>
-          <span>Aid station: <strong id="status-aid">—</strong></span>
-        </p>
-        <p class="status__state" id="status-state" hidden></p>
-        <p class="status__note" id="status-note"></p>
-        <p class="fine" id="status-stamp"></p>
-      </section>
+    <section class="card status" id="location" aria-labelledby="status-title">
+      <p class="kicker">Live status</p>
+      <h2 id="status-title">Last known location</h2>
+      <p class="status__line">
+        <span>Last update: <strong id="status-updated">Loading…</strong></span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span>Aid station: <strong id="status-aid">—</strong></span>
+      </p>
+      <p class="status__state" id="status-state" hidden></p>
+      <p class="status__note" id="status-note"></p>
+      <p class="note" id="status-stamp"></p>
+    </section>
 
-      <section class="panel tracking" id="track" aria-labelledby="track-title">
-        <h2 id="track-title">Race-day tracking</h2>
-        <ul class="notes">
-          <li>Race-day tracking will be available on the official site on Friday.</li>
-          <li>Bryce will <strong>not</strong> have a Garmin inReach this time.</li>
-          <li>Updates will only come from aid stations and will be delayed.</li>
-          <li>He will try to text a few times when he can.</li>
-        </ul>
-        <p>
-          Official race page:
-          <a href="https://runrabbitrunsteamboat.com/">runrabbitrunsteamboat.com</a>
-        </p>
-      </section>
+    <section class="card map-panel" id="map" aria-labelledby="map-title">
+      <h2 id="map-title">Course map</h2>
+      <p>
+        Overview of Run Rabbit Run around Steamboat Springs and Mount Werner.
+        Pins are approximate aid stations — not official GPS.
+      </p>
+      <div class="map-frame">
+        <div id="course-map" role="application" aria-label="Run Rabbit Run course overview map"></div>
+      </div>
+      <p class="note">Pinch to zoom. Tap a pin for the aid-station name. Gold = last known location.</p>
+      <ul class="aid-legend" id="aid-legend"></ul>
+      <div class="map-links">
+        <a class="btn" href="https://runrabbitrunsteamboat.com/the-course/" target="_blank" rel="noopener">Official course page</a>
+        <a class="btn" href="https://caltopo.com/m/F810" target="_blank" rel="noopener">Interactive CalTopo map</a>
+      </div>
+    </section>
 
-      <section class="panel map-panel" id="map" aria-labelledby="map-title">
-        <h2 id="map-title">Course map</h2>
-        <p>
-          Overview of the Run Rabbit Run 100 around Steamboat Springs and Mount Werner.
-          Pins are approximate aid stations for orientation — not official GPS.
-        </p>
-        <div class="map-frame">
-          <div id="course-map" role="application" aria-label="Run Rabbit Run course overview map"></div>
-        </div>
-        <p class="map-hint">Pinch to zoom. Tap a pin for the aid-station name. Gold = last known location.</p>
-        <ul class="aid-legend" id="aid-legend"></ul>
-        <div class="map-links">
-          <a class="btn btn--ghost btn--block" href="https://runrabbitrunsteamboat.com/the-course/">Official course page</a>
-          <a class="btn btn--ghost btn--block" href="https://caltopo.com/m/F810">Interactive CalTopo map</a>
-        </div>
-      </section>
-    </main>
+    <section class="story">
+      <h2>Why this matters</h2>
+      <p>
+        Ellis is Dave McDaniel’s son — a bright, funny kid who loves games and time with his siblings.
+        He’s fighting osteosarcoma. Bryce, a friend and former colleague, is running his seventh
+        100-miler for him — and asking friends and family to stand with St. Jude while he does it.
+      </p>
+    </section>
+  </main>
 
-    <footer class="foot">
-      <p>A small hub for family and friends.</p>
-      <p><a href="https://mcdaniel.fyi">mcdaniel.fyi</a></p>
-    </footer>
+  <footer>
+    <p>Run for Ellis · <a href="https://mcdaniel.fyi">mcdaniel.fyi</a></p>
+  </footer>
 
-    <nav class="sticky-cta" aria-label="Quick actions">
-      <a href="https://gofund.me/4b17893d2">Donate</a>
-      <a href="https://allsaintssupply.com/products/running-for-ellis">Shirt</a>
-      <a href="https://runrabbitrunsteamboat.com/">Track</a>
-    </nav>
+  <nav class="sticky-cta" aria-label="Quick actions">
+    <a href="https://gofund.me/4b17893d2">Donate</a>
+    <a href="https://allsaintssupply.com/products/running-for-ellis">Shirt</a>
+    <a href="https://runrabbitrunsteamboat.com/">Track</a>
+  </nav>
 
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <script src="location.js"></script>
-    <script src="map.js"></script>
-  </body>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="location.js"></script>
+  <script src="map.js"></script>
+</body>
 </html>
