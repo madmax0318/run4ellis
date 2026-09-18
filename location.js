@@ -17,10 +17,10 @@
  * COURSE_AIDS[]. Copy lat/lng from there, or leave them null.
  */
 window.RUN4ELLIS_LOCATION = {
-  aidStation: "Start — Steamboat Ski Area",
-  note: "Waiting for the first aid-station report. Official live tracking should appear on the race site today.",
-  updatedAt: "2026-09-18T08:00:00-06:00",
-  lat: 40.4572,
-  lng: -106.8053,
-  status: "awaiting first aid-station update",
+  aidStation: "Mount Werner (Out)",
+  note: "Checked out of Mt Werner at 9:38 AM MT — 4.6 mi, split 1:38:40. Next up: Fish Creek Falls (~16.8 mi).",
+  updatedAt: "2026-09-18T09:38:40-06:00",
+  lat: 40.4564,
+  lng: -106.743,
+  status: "Out — en route to Fish Creek Falls",
 };
