@@ -1,7 +1,9 @@
-/*
-  X-Frame-Options: DENY
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-
-/location.js
+/* Race-day: keep JS/CSS fresh so location pushes show up quickly */
+/*.js
   Cache-Control: public, max-age=60, must-revalidate
+
+/*.css
+  Cache-Control: public, max-age=60, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
