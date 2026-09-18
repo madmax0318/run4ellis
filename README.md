@@ -27,6 +27,7 @@ Fields inside `window.RUN4ELLIS_LOCATION`:
 | `updatedAt` | ISO time preferred: `2026-09-18T16:40:00-06:00` (Mountain), or a plain string |
 | `lat` / `lng` | Optional. If both are set, a gold pin is drawn on the map. Use `null` to hide it. |
 | `status` | Optional: `"at aid"`, `"en route to Summit Lake"`, `"finished"` |
+| `mile` | Course mile for the elevation-profile marker (e.g. `4.6`). Chart scale is 0–100. |
 
 Approximate aid-station coordinates are in `map.js` (`COURSE_AIDS`) if you want to copy `lat` / `lng`.
 
@@ -42,6 +43,7 @@ window.RUN4ELLIS_LOCATION = {
   lat: 40.5158,
   lng: -106.788,
   status: "en route to Olympian Hall",
+  mile: 44.5,
 };
 ```
 

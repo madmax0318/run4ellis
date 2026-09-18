@@ -6,6 +6,7 @@
  * updatedAt  {string}  ISO 8601 preferred (America/Denver offset)
  * lat/lng    {number|null}
  * status     {string}
+ * mile       {number}  Course progress for the elevation-profile marker
  */
 window.RUN4ELLIS_LOCATION = {
   aidStation: "Mount Werner (Out)",
@@ -14,4 +15,5 @@ window.RUN4ELLIS_LOCATION = {
   lat: 40.4564,
   lng: -106.743,
   status: "Out — en route to Fish Creek Falls",
+  mile: 4.6,
 };

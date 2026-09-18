@@ -16,7 +16,7 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   />
-  <link rel="stylesheet" href="styles.css?v=20260918c" />
+  <link rel="stylesheet" href="styles.css?v=20260918d" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -57,9 +57,29 @@
       <ul class="aid-legend" id="aid-legend"></ul>
       <div class="map-links">
         <a class="btn" href="https://caltopo.com/m/F810" target="_blank" rel="noopener">CalTopo course map</a>
-        <a class="btn" href="elevation-100.jpg" target="_blank" rel="noopener">Elevation profile</a>
         <a class="btn" href="https://runrabbitrunsteamboat.com/the-course/" target="_blank" rel="noopener">Official course page</a>
       </div>
+      <figure class="elevation" id="elevation">
+        <div class="elevation__frame">
+          <img
+            src="elevation-100.jpg"
+            width="1543"
+            height="410"
+            alt="Run Rabbit Run 100 elevation profile from mile 0 to 100"
+          />
+          <div class="elevation__marker" id="elevation-marker" hidden>
+            <span class="elevation__line" aria-hidden="true"></span>
+            <span class="elevation__pin" aria-hidden="true">
+              <span class="elevation__pulse"></span>
+            </span>
+            <span class="elevation__label" id="elevation-marker-label"></span>
+          </div>
+        </div>
+        <figcaption class="note">
+          Gold mark is Bryce’s last check-in on this profile.
+          <a href="elevation-100.jpg" target="_blank" rel="noopener">Open full size</a>
+        </figcaption>
+      </figure>
     </section>
 
     <section class="card weather" id="weather" aria-labelledby="wx-title">
@@ -123,8 +143,8 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""
   ></script>
-  <script src="location.js?v=20260918c"></script>
-  <script src="map.js?v=20260918c"></script>
+  <script src="location.js?v=20260918d"></script>
+  <script src="map.js?v=20260918d"></script>
   <script src="weather.js?v=20260918c"></script>
 </body>
 </html>
