@@ -76,9 +76,9 @@
         <p class="kicker">Live status</p>
         <h2 id="status-title">Last known location</h2>
         <p class="status__line">
-          Last update: <strong id="status-updated">Loading…</strong>
+          <span>Last update: <strong id="status-updated">Loading…</strong></span>
           <span class="dot" aria-hidden="true">·</span>
-          Aid station: <strong id="status-aid">—</strong>
+          <span>Aid station: <strong id="status-aid">—</strong></span>
         </p>
         <p class="status__state" id="status-state" hidden></p>
         <p class="status__note" id="status-note"></p>
@@ -108,7 +108,8 @@
         <div class="map-frame">
           <div id="course-map" role="application" aria-label="Run Rabbit Run course overview map"></div>
         </div>
-        <p class="map-hint">Pinch to zoom. Tap a pin for the aid-station name. Two-finger drag to pan.</p>
+        <p class="map-hint">Pinch to zoom. Tap a pin for the aid-station name. Gold = last known location.</p>
+        <ul class="aid-legend" id="aid-legend"></ul>
         <div class="map-links">
           <a class="btn btn--ghost btn--block" href="https://runrabbitrunsteamboat.com/the-course/">Official course page</a>
           <a class="btn btn--ghost btn--block" href="https://caltopo.com/m/F810">Interactive CalTopo map</a>

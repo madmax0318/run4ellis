@@ -115,9 +115,9 @@
       attributionControl: true,
     });
 
-    window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    window.L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
       maxZoom: 16,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     }).addTo(map);
 
     window.L.polyline(OVERVIEW_LINE, {
@@ -142,7 +142,7 @@
     const bounds = window.L.latLngBounds(COURSE_AIDS.map(function (a) { return [a.lat, a.lng]; }));
 
     if (hasCoords(loc)) {
-      const live = window.L.marker([loc.lat, loc.lng], { icon: liveIcon(), zIndexOffset: 500, title: "Last known location" })
+      window.L.marker([loc.lat, loc.lng], { icon: liveIcon(), zIndexOffset: 500, title: "Last known location" })
         .addTo(map)
         .bindPopup(
           "<strong>Last known</strong><br>" +
@@ -152,10 +152,20 @@
             formatUpdatedAt(loc.updatedAt)
         );
       bounds.extend([loc.lat, loc.lng]);
-      live.openPopup();
     }
 
     map.fitBounds(bounds.pad(0.18));
+    setTimeout(function () {
+      map.invalidateSize();
+      map.fitBounds(bounds.pad(0.18));
+    }, 200);
+
+    const legend = $("aid-legend");
+    if (legend) {
+      legend.innerHTML = COURSE_AIDS.map(function (aid) {
+        return "<li><span>" + aid.name + "</span><span>mi " + aid.mile + "</span></li>";
+      }).join("");
+    }
 
     const zoom = el.querySelector(".leaflet-control-zoom");
     if (zoom) zoom.setAttribute("aria-label", "Map zoom");
