@@ -1,8 +1,16 @@
-/* Race-day: keep JS/CSS fresh so location pushes show up quickly */
-/*.js
+# Race-day: keep location.js fresh so aid updates show without a 4h wait.
+# Use # for comments — /* */ breaks Cloudflare Pages _headers parsing.
+
+/location.js
   Cache-Control: public, max-age=60, must-revalidate
 
-/*.css
+/map.js
+  Cache-Control: public, max-age=60, must-revalidate
+
+/weather.js
+  Cache-Control: public, max-age=60, must-revalidate
+
+/styles.css
   Cache-Control: public, max-age=60, must-revalidate
 
 /index.html
