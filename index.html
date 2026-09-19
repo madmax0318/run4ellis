@@ -16,7 +16,7 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   />
-  <link rel="stylesheet" href="styles.css?v=20260919a" />
+  <link rel="stylesheet" href="styles.css?v=20260918i" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -31,23 +31,29 @@
   </header>
 
   <main id="main">
-    <section class="card highlight last-known" id="location" aria-labelledby="status-title">
-      <p class="kicker">Live status</p>
-      <h2 id="status-title">Last known location</h2>
-      <p class="last-known__aid" id="status-aid">Loading…</p>
-      <dl class="last-known__stats">
-        <div>
-          <dt>Mile</dt>
-          <dd id="status-mile">—</dd>
-        </div>
-        <div>
-          <dt>Updated</dt>
-          <dd id="status-updated">—</dd>
-        </div>
-      </dl>
-      <p class="status__state" id="status-state" hidden></p>
-      <p class="status__note" id="status-note"></p>
-      <p class="note" id="status-stamp"></p>
+    <section class="card highlight live-update" id="live-update" aria-labelledby="update-title">
+      <p class="kicker">Live from the trail</p>
+      <h2 id="update-title">Update from Bryce</h2>
+      <p class="status__line">
+        <span>As of <strong>~7:10 PM MT</strong></span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span><strong>37.75 miles</strong> complete</span>
+      </p>
+      <p class="status__state">Feeling: not terrible</p>
+      <p>
+        Field check-in on the stretch between <strong>Billy’s Rabbit Hole</strong> and
+        <strong>Dry Lake</strong>. Still moving.
+      </p>
+      <figure class="live-update__photo">
+        <img
+          src="images/bryce-update.jpg"
+          width="1600"
+          height="1200"
+          alt="Evening trail between Billy’s Rabbit Hole and Dry Lake — dirt path, sage hillside, and sunset over the valley"
+        />
+        <figcaption class="note">Trail-side · evening of Sep 18, 2026 · Mountain Time</figcaption>
+      </figure>
+      <p class="note">Photo from Bryce. Official tracker only updates at aid stations.</p>
     </section>
 
     <section class="card highlight track-map map-panel" id="map" aria-labelledby="track-title">
@@ -110,29 +116,17 @@
       <p class="wx__meta" id="wx-meta"></p>
     </section>
 
-    <section class="card highlight live-update" id="live-update" aria-labelledby="update-title">
-      <p class="kicker">Live from the trail</p>
-      <h2 id="update-title">Update from Bryce</h2>
+    <section class="card status" id="location" aria-labelledby="status-title">
+      <p class="kicker">Live status</p>
+      <h2 id="status-title">Last known location</h2>
       <p class="status__line">
-        <span>As of <strong>~7:10 PM MT</strong></span>
+        <span>Last update: <strong id="status-updated">Loading…</strong></span>
         <span class="dot" aria-hidden="true">·</span>
-        <span><strong>37.75 miles</strong> complete</span>
+        <span>Aid station: <strong id="status-aid">—</strong></span>
       </p>
-      <p class="status__state">Feeling: not terrible</p>
-      <p>
-        Field check-in on the stretch between <strong>Billy’s Rabbit Hole</strong> and
-        <strong>Dry Lake</strong>. Still moving.
-      </p>
-      <figure class="live-update__photo">
-        <img
-          src="images/bryce-update.jpg"
-          width="1600"
-          height="1200"
-          alt="Evening trail between Billy’s Rabbit Hole and Dry Lake — dirt path, sage hillside, and sunset over the valley"
-        />
-        <figcaption class="note">Trail-side · evening of Sep 18, 2026 · Mountain Time</figcaption>
-      </figure>
-      <p class="note">Photo from Bryce. Official tracker only updates at aid stations.</p>
+      <p class="status__state" id="status-state" hidden></p>
+      <p class="status__note" id="status-note"></p>
+      <p class="note" id="status-stamp"></p>
     </section>
 
     <section class="cards support" aria-label="Ways to help">
@@ -175,7 +169,7 @@
     crossorigin=""
   ></script>
   <script src="location.js?v=20260919e"></script>
-  <script src="map.js?v=20260919a"></script>
-  <script src="weather.js?v=20260919a"></script>
+  <script src="map.js?v=20260918i"></script>
+  <script src="weather.js?v=20260918i"></script>
 </body>
 </html>
