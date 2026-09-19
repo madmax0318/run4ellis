@@ -9,11 +9,11 @@
  * mile       {number}  Course progress for the elevation-profile marker
  */
 window.RUN4ELLIS_LOCATION = {
-  aidStation: "Mt Werner Back",
-  note: "Official Aravaipa split — Mt Werner Back, 95.07 mi at 12:32:33 PM MT (elapsed 27:32:29). Overall ~17.4 min/mi. Last segment Long Lake Back→Mt Werner Back ~16.6 min/mi. Next: Finish (~101.2 mi), ETA ~2:13 PM MT (recent-segment pace; overall-pace ETA ~2:18 PM MT).",
-  updatedAt: "2026-09-19T12:32:33-06:00",
-  lat: 40.4564,
-  lng: -106.743,
-  status: "Racing",
-  mile: 95.1,
+  aidStation: "Finish",
+  note: "Official Aravaipa FINISH — 101.1 mi at 12:45:39 PM MT Sat (elapsed 28:45:39). Overall ~17.0 min/mi. Last segment Mt Werner Back→Finish ~12:01/mi. Bryce finished Run Rabbit Run 100.",
+  updatedAt: "2026-09-19T12:45:39-06:00",
+  lat: 40.4572,
+  lng: -106.8053,
+  status: "Finished",
+  mile: 101.1,
 };
