@@ -9,11 +9,11 @@
  * mile       {number}  Course progress for the elevation-profile marker
  */
 window.RUN4ELLIS_LOCATION = {
-  aidStation: "Lane of Pain Back",
-  note: "Official Aravaipa split — Lane of Pain Back, 57.2 mi at 12:32:18 AM MT (elapsed 15:32:18). Overall ~16.3 min/mi. Last segment Lane Out→Back ~18.2 min/mi. Next: Olympian Hall Back (~61.6 mi), ETA ~1:49 AM MT (Aravaipa projection).",
-  updatedAt: "2026-09-19T00:32:18-06:00",
-  lat: 40.4607,
-  lng: -106.8559,
+  aidStation: "Olympian Hall Back",
+  note: "Official Aravaipa split — Olympian Hall Back, 61.64 mi at 2:13:06 AM MT (elapsed 17:13:02). Overall ~16.8 min/mi. Last segment Lane of Pain Back→Olympian Hall Back ~22.8 min/mi. Next: Dry Lake Back (~68.28 mi), ETA ~4:44 AM MT (recent-segment pace; overall-pace ETA ~4:04 AM MT).",
+  updatedAt: "2026-09-19T02:13:06-06:00",
+  lat: 40.486,
+  lng: -106.8188,
   status: "Racing",
-  mile: 57.2,
+  mile: 61.64,
 };
