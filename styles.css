@@ -151,6 +151,61 @@ h2 {
   margin-top: 1rem;
 }
 
+.last-known {
+  margin-top: 1.5rem;
+}
+
+.last-known__aid {
+  margin: 0;
+  font-size: clamp(1.7rem, 8vw, 2.35rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.last-known__stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin: 0.15rem 0 0;
+  align-items: end;
+}
+
+.last-known__stats dt {
+  margin: 0 0 0.2rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.last-known__stats dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.last-known__stats #status-mile {
+  font-size: clamp(2.2rem, 10vw, 3rem);
+  letter-spacing: -0.03em;
+  color: var(--accent);
+}
+
+.last-known__stats #status-updated {
+  font-size: clamp(1.05rem, 3.6vw, 1.25rem);
+}
+
+.last-known .status__state {
+  font-size: 1rem;
+}
+
+.last-known .status__note {
+  color: var(--muted);
+}
+
 .live-update {
   margin-top: 1.5rem;
 }
@@ -499,6 +554,13 @@ footer a { color: var(--accent); }
 @keyframes pulse {
   0% { transform: scale(0.55); opacity: 0.8; }
   100% { transform: scale(1.35); opacity: 0; }
+}
+
+@media (min-width: 420px) {
+  .last-known__stats {
+    grid-template-columns: minmax(0, auto) minmax(0, 1fr);
+    gap: 0.85rem 1.25rem;
+  }
 }
 
 @media (min-width: 720px) {
