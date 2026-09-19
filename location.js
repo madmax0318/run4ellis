@@ -9,11 +9,11 @@
  * mile       {number}  Course progress for the elevation-profile marker
  */
 window.RUN4ELLIS_LOCATION = {
-  aidStation: "Long Lake Back",
-  note: "Official Aravaipa split — Long Lake Back, 88.10 mi at 10:37:14 AM MT (elapsed 25:37:10). Overall ~17.4 min/mi. Last segment Summit Lake Back→Long Lake Back ~18.0 min/mi. Next: Mt Werner Back (~95.1 mi), ETA ~12:42 PM MT (recent-segment pace; overall-pace ETA ~12:38 PM MT).",
-  updatedAt: "2026-09-19T10:37:14-06:00",
-  lat: 40.5165,
-  lng: -106.6678,
+  aidStation: "Mt Werner Back",
+  note: "Official Aravaipa split — Mt Werner Back, 95.07 mi at 12:32:33 PM MT (elapsed 27:32:29). Overall ~17.4 min/mi. Last segment Long Lake Back→Mt Werner Back ~16.6 min/mi. Next: Finish (~101.2 mi), ETA ~2:13 PM MT (recent-segment pace; overall-pace ETA ~2:18 PM MT).",
+  updatedAt: "2026-09-19T12:32:33-06:00",
+  lat: 40.4564,
+  lng: -106.743,
   status: "Racing",
-  mile: 88.1,
+  mile: 95.1,
 };
