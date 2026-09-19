@@ -9,11 +9,11 @@
  * mile       {number}  Course progress for the elevation-profile marker
  */
 window.RUN4ELLIS_LOCATION = {
-  aidStation: "Dry Lake Out",
-  note: "Official Aravaipa split — Dry Lake Out, 42.89 mi at 8:25:38 PM MT (elapsed 11:25:38). Overall ~16.0 min/mi. Next: Olympian Hall Out (~49.3 mi), ETA ~10:06 PM MT @ recent ~15.7 min/mi.",
-  updatedAt: "2026-09-18T20:25:38-06:00",
-  lat: 40.5158,
-  lng: -106.788,
+  aidStation: "Olympian Hall Out",
+  note: "Official Aravaipa split — Olympian Hall Out, 49.3 mi at 10:07:57 PM MT (elapsed 13:07:52). Overall ~16.0 min/mi. Next: Lane of Pain Out (~53.6 mi), ETA ~11:16 PM MT @ recent ~16.0 min/mi.",
+  updatedAt: "2026-09-18T22:07:57-06:00",
+  lat: 40.4834,
+  lng: -106.8378,
   status: "Racing",
-  mile: 42.89,
+  mile: 49.3,
 };
