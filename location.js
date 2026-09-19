@@ -9,11 +9,11 @@
  * mile       {number}  Course progress for the elevation-profile marker
  */
 window.RUN4ELLIS_LOCATION = {
-  aidStation: "Billy's Rabbit Hole",
-  note: "Out of Billy's Rabbit Hole at 5:58 PM MT \u2014 33.5 mi, elapsed 8:57:55. Last segment ~15.5 min/mi from Long Lake. Next up: Dry Lake (~43.7 mi), ETA ~8:36 PM MT at that pace. No Summit Lake split on Aravaipa. Tracker only updates at aids.",
-  updatedAt: "2026-09-18T17:57:59-06:00",
-  lat: 40.534,
-  lng: -106.718,
-  status: "Out \u2014 Billy's Rabbit Hole",
-  mile: 33.5,
+  aidStation: "Between Billy's and Dry Lake",
+  note: "Field update from Bryce ~7:10 PM MT \u2014 37.75 mi, feeling \"not terrible.\" On trail between Billy's Rabbit Hole and Dry Lake. Next official aid: Dry Lake. Tracker only updates at aids.",
+  updatedAt: "2026-09-18T19:10:00-06:00",
+  lat: 40.528,
+  lng: -106.742,
+  status: "On trail \u2014 field update",
+  mile: 37.75,
 };

@@ -148,7 +148,29 @@ h2 {
 }
 
 .track-map {
+  margin-top: 1rem;
+}
+
+.live-update {
   margin-top: 1.5rem;
+}
+
+.live-update__photo {
+  margin: 0.15rem 0 0;
+}
+
+.live-update__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #11160f;
+  object-fit: cover;
+}
+
+.live-update__photo figcaption {
+  margin-top: 0.5rem;
 }
 
 .subhead {
