@@ -134,7 +134,7 @@
     if (label) {
       var place = loc.aidStation || "Last check-in";
       var shown = Math.round(mile * 10) / 10;
-      label.textContent = place + " · mi " + shown;
+      label.textContent = "mi " + shown + " · " + place;
     }
   }
 
