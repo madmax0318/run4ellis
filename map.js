@@ -67,21 +67,31 @@
     return loc && typeof loc.lat === "number" && typeof loc.lng === "number";
   }
 
+  function formatMile(value) {
+    if (value == null) return "—";
+    var rounded = Math.round(value * 100) / 100;
+    return String(rounded);
+  }
+
   function renderStatus(loc) {
     var updated = $("status-updated");
     var aid = $("status-aid");
+    var mile = $("status-mile");
     var status = $("status-state");
     var note = $("status-note");
     var stamp = $("status-stamp");
 
     if (!loc) {
       if (updated) updated.textContent = "No update loaded";
+      if (aid) aid.textContent = "—";
+      if (mile) mile.textContent = "—";
       if (note) note.textContent = "location.js did not load. Hard-refresh the page.";
       return;
     }
 
     if (updated) updated.textContent = formatUpdatedAt(loc.updatedAt);
     if (aid) aid.textContent = loc.aidStation || "—";
+    if (mile) mile.textContent = formatMile(loc.mile);
     if (status) {
       if (loc.status) {
         status.hidden = false;
