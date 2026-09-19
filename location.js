@@ -9,11 +9,11 @@
  * mile       {number}  Course progress for the elevation-profile marker
  */
 window.RUN4ELLIS_LOCATION = {
-  aidStation: "Between Billy's and Dry Lake",
-  note: "Field update from Bryce ~7:10 PM MT \u2014 37.75 mi, feeling \"not terrible.\" On trail between Billy's Rabbit Hole and Dry Lake. Next official aid: Dry Lake. Tracker only updates at aids.",
-  updatedAt: "2026-09-18T19:10:00-06:00",
-  lat: 40.528,
-  lng: -106.742,
-  status: "On trail \u2014 field update",
-  mile: 37.75,
+  aidStation: "Dry Lake Out",
+  note: "Official Aravaipa split — Dry Lake Out, 42.89 mi at 8:25:38 PM MT (elapsed 11:25:38). Overall ~16.0 min/mi. Next: Olympian Hall Out (~49.3 mi), ETA ~10:06 PM MT @ recent ~15.7 min/mi.",
+  updatedAt: "2026-09-18T20:25:38-06:00",
+  lat: 40.5158,
+  lng: -106.788,
+  status: "Racing",
+  mile: 42.89,
 };
